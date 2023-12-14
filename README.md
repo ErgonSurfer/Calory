@@ -2,6 +2,12 @@
 
 Calory is a web-based wallet application designed for the secure management of Ergon (XRG) and SLP tokens. It is intuitive and user-friendly, catering to both novice and seasoned cryptocurrency enthusiasts.
 
+![calory-min](https://github.com/ErgonSurfer/Calory/assets/153525861/f4156a2f-cc9f-4b5a-8fa1-4030a6f8b892)
+
+
+
+**Website** : https://calory.social
+
 ## Features
 
 - **Ergon (XRG) Support**: Send, receive, and manage XRG with ease.
@@ -22,22 +28,22 @@ Ensure you have the latest versions of Node.js and npm installed. Visit the [Nod
 1. Clone the Calory repository:
 
    ```bash
-   git clone https://github.com/ErgonSurfer/Calory.git```
+   git clone https://github.com/ErgonSurfer/Calory.git
 
 2. Change directory to Calory:
 
    ```bash
-   cd Calory```
+   cd Calory
 
 3. Install the dependencies:
 
    ```bash
-   npm i```
+   npm i
 
 4. Start the application with:
 
    ```bash
-   npm start```
+   npm start
 
 
 The web wallet will be accessible at http://localhost:3000.
