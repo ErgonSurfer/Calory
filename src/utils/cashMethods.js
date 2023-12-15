@@ -1030,7 +1030,7 @@ export function convertEtokenToEcashAddr(eTokenAddress) {
     let ecashAddress;
     try {
         const { type, hash } = cashaddr.decode(testedEtokenAddr);
-        ecashAddress = cashaddr.encode('ecash', type, hash);
+        ecashAddress = cashaddr.encode('ergon', type, hash);
     } catch (err) {
         return err;
     }
@@ -1050,7 +1050,7 @@ export function convertToEcashPrefix(bitcoincashPrefixedAddress) {
 
         let newPrefix;
         if (prefix === 'bitcoincash') {
-            newPrefix = 'ecash';
+            newPrefix = 'ergon';
         } else if (prefix === 'simpleledger') {
             newPrefix = 'etoken';
         } else {
@@ -1068,23 +1068,23 @@ export function convertToEcashPrefix(bitcoincashPrefixedAddress) {
 export function convertEcashtoEtokenAddr(eCashAddress) {
     const isValidInput = isValidXrgAddress(eCashAddress);
     if (!isValidInput) {
-        return new Error(`${eCashAddress} is not a valid ecash address`);
+        return new Error(`${eCashAddress} is not a valid ergon address`);
     }
 
     // Check for ecash: prefix
-    const isPrefixedEcashAddress = eCashAddress.slice(0, 6) === 'ecash:';
+    const isPrefixedEcashAddress = eCashAddress.slice(0, 6) === 'ergon:';
 
     // If no prefix, assume it is checksummed for an ecash: prefix
     const testedEcashAddr = isPrefixedEcashAddress
         ? eCashAddress
-        : `ecash:${eCashAddress}`;
+        : `ergon:${eCashAddress}`;
 
     let eTokenAddress;
     try {
         const { type, hash } = cashaddr.decode(testedEcashAddr);
         eTokenAddress = cashaddr.encode('etoken', type, hash);
     } catch (err) {
-        return new Error('eCash to eToken address conversion error');
+        return new Error('Ergon to eToken address conversion error');
     }
     return eTokenAddress;
 }
