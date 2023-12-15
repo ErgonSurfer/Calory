@@ -73,7 +73,7 @@ export const sendXec = async (chronik, wallet, targetOutputs, feeRate) => {
             // User provides target output, coinSelect adds change output if necessary (with no address key)
 
             // Change address is wallet address
-            output.address = wallet.Path1899.cashAddress;
+            output.address = wallet.Path2137.cashAddress;
         }
 
         // TODO add cashaddr support for eCash to txBuilder in utxo-lib
@@ -82,7 +82,7 @@ export const sendXec = async (chronik, wallet, targetOutputs, feeRate) => {
 
     signInputs(
         txBuilder,
-        [wallet.Path245, wallet.Path145, wallet.Path1899],
+        [wallet.Path245, wallet.Path145, wallet.Path2137],
         inputs,
     );
 

@@ -66,11 +66,11 @@ const ReceiveWithWalletPresent = ({
                     </>
                 )}
             </WalletInfoCtn>
-            {wallet && wallet.Path1899 && (
+            {wallet && wallet.Path2137 && (
                 <QrCodeCtn>
                     <QRCode
                         id="borderedQRCode"
-                        address={wallet.Path1899.cashAddress}
+                        address={wallet.Path2137.cashAddress}
                     />
                 </QrCodeCtn>
             )}
@@ -96,7 +96,7 @@ const Receive = () => {
                 <LoadingCtn />
             ) : (
                 <>
-                    {(wallet && wallet.Path1899) ||
+                    {(wallet && wallet.Path2137) ||
                     (previousWallet && previousWallet.path1899) ? (
                         <ReceiveWithWalletPresent
                             wallet={wallet}

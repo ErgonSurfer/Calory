@@ -175,7 +175,7 @@ export const getUtxoWif = (utxo, wallet) => {
     if (!wallet) {
         throw new Error('Invalid wallet parameter');
     }
-    const accounts = [wallet.Path245, wallet.Path145, wallet.Path1899];
+    const accounts = [wallet.Path245, wallet.Path145, wallet.Path2137];
     const wif = accounts
         .filter(acc => acc.cashAddress === utxo.address)
         .pop().fundingWif;
@@ -185,7 +185,7 @@ export const getUtxoWif = (utxo, wallet) => {
 export const signUtxosByAddress = (inputUtxos, wallet, txBuilder) => {
     for (let i = 0; i < inputUtxos.length; i++) {
         const utxo = inputUtxos[i];
-        const accounts = [wallet.Path245, wallet.Path145, wallet.Path1899];
+        const accounts = [wallet.Path245, wallet.Path145, wallet.Path2137];
 
         const wif = accounts
             .filter(acc => acc.cashAddress === utxo.address)
@@ -1188,9 +1188,9 @@ export const isLegacyMigrationRequired = wallet => {
     // Or each Path1899, Path145, Path245 does not have a public key
     // Then it requires migration
     if (
-        !wallet.Path1899 ||
-        !wallet.Path1899.publicKey ||
-        !wallet.Path1899.hash160 ||
+        !wallet.Path2137 ||
+        !wallet.Path2137.publicKey ||
+        !wallet.Path2137.hash160 ||
         !wallet.Path145.publicKey ||
         !wallet.Path145.hash160 ||
         !wallet.Path245.publicKey ||
@@ -1203,14 +1203,14 @@ export const isLegacyMigrationRequired = wallet => {
 };
 
 export const getHashArrayFromWallet = wallet => {
-    // If the wallet has wallet.Path1899.hash160, it's migrated and will have all of them
+    // If the wallet has wallet.Path2137.hash160, it's migrated and will have all of them
     // Return false for an umigrated wallet
     const hash160Array =
-        wallet && wallet.Path1899 && 'hash160' in wallet.Path1899
+        wallet && wallet.Path2137 && 'hash160' in wallet.Path2137
             ? [
                   wallet.Path245.hash160,
                   wallet.Path145.hash160,
-                  wallet.Path1899.hash160,
+                  wallet.Path2137.hash160,
               ]
             : false;
     return hash160Array;

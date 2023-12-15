@@ -42,7 +42,7 @@ export const createToken = async (
             throw walletError;
         }
         const utxos = wallet.state.nonSlpUtxos;
-        const CREATION_ADDR = wallet.Path1899.cashAddress;
+        const CREATION_ADDR = wallet.Path2137.cashAddress;
         let txBuilder = utxolib.bitgo.createTransactionBuilderForNetwork(
             utxolib.networks.ecash,
         );
@@ -122,7 +122,7 @@ export const sendToken = async (
     { tokenId, amount, tokenReceiverAddress },
 ) => {
     const { slpUtxos, nonSlpUtxos } = wallet.state;
-    const CREATION_ADDR = wallet.Path1899.cashAddress;
+    const CREATION_ADDR = wallet.Path2137.cashAddress;
 
     // Handle error of user having no XEC
     if (!nonSlpUtxos || nonSlpUtxos.length === 0) {
@@ -194,7 +194,7 @@ export const sendToken = async (
 
 export const burnToken = async (chronik, wallet, { tokenId, amount }) => {
     const { slpUtxos, nonSlpUtxos } = wallet.state;
-    const CREATION_ADDR = wallet.Path1899.cashAddress;
+    const CREATION_ADDR = wallet.Path2137.cashAddress;
 
     // Handle error of user having no XEC
     if (!nonSlpUtxos || nonSlpUtxos.length === 0) {

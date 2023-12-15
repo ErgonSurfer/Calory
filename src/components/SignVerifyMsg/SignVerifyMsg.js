@@ -101,7 +101,7 @@ const SignVerifyMsg = () => {
         try {
             // First, get required params
             const keyPair = utxolib.ECPair.fromWIF(
-                wallet.Path1899.fundingWif,
+                wallet.Path2137.fundingWif,
                 utxolib.networks.ecash,
             );
             // Reference https://github.com/Permissionless-Software-Foundation/bch-js/blob/master/src/bitcoincash.js#L161
@@ -293,18 +293,18 @@ const SignVerifyMsg = () => {
                             <Form.Item>
                                 <SignMessageLabel>Address:</SignMessageLabel>
                                 {wallet &&
-                                    wallet.Path1899 &&
-                                    wallet.Path1899.cashAddress && (
+                                    wallet.Path2137 &&
+                                    wallet.Path2137.cashAddress && (
                                         <AddressCopyCtn>
                                             <Input
                                                 name="signMessageAddress"
                                                 disabled={true}
                                                 value={
                                                     wallet &&
-                                                    wallet.Path1899 &&
-                                                    wallet.Path1899.cashAddress
+                                                    wallet.Path2137 &&
+                                                    wallet.Path2137.cashAddress
                                                         ? convertToEcashPrefix(
-                                                              wallet.Path1899
+                                                              wallet.Path2137
                                                                   .cashAddress,
                                                           )
                                                         : ''
@@ -312,12 +312,12 @@ const SignVerifyMsg = () => {
                                             />
                                             <CopyToClipboard
                                                 data={convertToEcashPrefix(
-                                                    wallet.Path1899.cashAddress,
+                                                    wallet.Path2137.cashAddress,
                                                 )}
                                                 optionalOnCopyNotification={{
                                                     title: 'Copied',
                                                     msg: `${convertToEcashPrefix(
-                                                        wallet.Path1899
+                                                        wallet.Path2137
                                                             .cashAddress,
                                                     )} copied to clipboard`,
                                                 }}

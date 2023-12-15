@@ -340,7 +340,7 @@ const multiAddressUtxos = [
         isCoinbase: false,
         value: '10000',
         network: 'XEC',
-        address: wallet.Path1899.cashAddress,
+        address: wallet.Path2137.cashAddress,
     },
 ];
 utxosAtManyAddressesWallet.state.nonSlpUtxos = multiAddressUtxos;

@@ -422,7 +422,7 @@ const App = () => {
         // Get address from active wallet
         let address;
         try {
-            address = wallet.Path1899.cashAddress;
+            address = wallet.Path2137.cashAddress;
             address = convertToEcashPrefix(address);
             console.log(`Address fetched from extension`, address);
         } catch (err) {

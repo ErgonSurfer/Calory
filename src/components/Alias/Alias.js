@@ -124,7 +124,7 @@ const Alias = ({ passLoadingStatus }) => {
         if (
             !wallet ||
             typeof wallet === 'undefined' ||
-            !wallet.Path1899 ||
+            !wallet.Path2137 ||
             !cashtabCache ||
             typeof cashtabCache === 'undefined'
         ) {
@@ -137,8 +137,8 @@ const Alias = ({ passLoadingStatus }) => {
         // Call with this function to ensure that checkbox state and checkbox are updated
         handleDefaultAddressCheckboxChange({ target: { checked: true } });
 
-        if (wallet.Path1899.cashAddress) {
-            await refreshAliases(wallet.Path1899.cashAddress);
+        if (wallet.Path2137.cashAddress) {
+            await refreshAliases(wallet.Path2137.cashAddress);
         }
 
         // Refresh alias prices if none exist yet
@@ -325,7 +325,7 @@ const Alias = ({ passLoadingStatus }) => {
                         ...previousAliases.pending,
                         {
                             alias: aliasInput,
-                            address: wallet.Path1899.cashAddress,
+                            address: wallet.Path2137.cashAddress,
                         },
                     ],
                 }));
@@ -390,7 +390,7 @@ const Alias = ({ passLoadingStatus }) => {
             handleAliasAddressInput({
                 target: {
                     name: 'aliasAddress',
-                    value: wallet.Path1899.cashAddress,
+                    value: wallet.Path2137.cashAddress,
                 },
             });
         } else {
@@ -496,7 +496,7 @@ const Alias = ({ passLoadingStatus }) => {
                 )}
                 {!useThisAddressChecked &&
                     !aliasAddressValidationError &&
-                    ` Please also note Cashtab will only track alias registrations for ${wallet.name}: ${wallet.Path1899?.cashAddress}.`}
+                    ` Please also note Cashtab will only track alias registrations for ${wallet.name}: ${wallet.Path2137?.cashAddress}.`}
             </Modal>
             <WalletInfoCtn>
                 <WalletLabel

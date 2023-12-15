@@ -388,7 +388,7 @@ it(`signUtxosByAddress() successfully returns a txBuilder object for a one to on
     const txFee = new BigNumber(totalInputUtxoValue).minus(
         new BigNumber(satoshisToSendOutput),
     );
-    const changeAddress = wallet.Path1899.cashAddress;
+    const changeAddress = wallet.Path2137.cashAddress;
     const outputObj = generateTxOutput(
         isOneToMany,
         singleSendValue,
@@ -454,7 +454,7 @@ it(`signUtxosByAddress() successfully returns a txBuilder object for a one to ma
             ),
         ); // change value
     destinationAddressAndValueArray = validAddressArrayInput;
-    const changeAddress = wallet.Path1899.cashAddress;
+    const changeAddress = wallet.Path2137.cashAddress;
     const outputObj = generateTxOutput(
         isOneToMany,
         singleSendValue,
@@ -902,7 +902,7 @@ it(`generateTokenTxOutput() returns a valid object for a valid create token tx`,
         utxolib.networks.ecash,
     );
     const { configObj, wallet } = createTokenMock;
-    const tokenSenderCashAddress = wallet.Path1899.cashAddress;
+    const tokenSenderCashAddress = wallet.Path2137.cashAddress;
 
     const tokenOutputObj = generateTokenTxOutput(
         txBuilder,
@@ -923,8 +923,8 @@ it(`generateTokenTxOutput() returns a valid object for a valid send token tx`, a
         utxolib.networks.ecash,
     );
     const { wallet } = createTokenMock;
-    const tokenSenderCashAddress = wallet.Path1899.cashAddress;
-    const tokenRecipientTokenAddress = wallet.Path1899.cashAddress;
+    const tokenSenderCashAddress = wallet.Path2137.cashAddress;
+    const tokenRecipientTokenAddress = wallet.Path2137.cashAddress;
 
     const tokenOutputObj = generateTokenTxOutput(
         txBuilder,
@@ -947,7 +947,7 @@ it(`generateTokenTxOutput() returns a valid object for a valid burn token tx`, a
         utxolib.networks.ecash,
     );
     const { wallet } = createTokenMock;
-    const tokenSenderCashAddress = wallet.Path1899.cashAddress;
+    const tokenSenderCashAddress = wallet.Path2137.cashAddress;
 
     const tokenOutputObj = generateTokenTxOutput(
         txBuilder,
@@ -1093,7 +1093,7 @@ it(`generateTxOutput() returns a txBuilder instance for a valid one to one XEC t
     let txBuilder = utxolib.bitgo.createTransactionBuilderForNetwork(
         utxolib.networks.ecash,
     );
-    const changeAddress = wallet.Path1899.cashAddress;
+    const changeAddress = wallet.Path2137.cashAddress;
 
     const outputObj = generateTxOutput(
         isOneToMany,
@@ -1138,7 +1138,7 @@ it(`generateTxOutput() returns a txBuilder instance for a valid one to many XEC 
     let txBuilder = utxolib.bitgo.createTransactionBuilderForNetwork(
         utxolib.networks.ecash,
     );
-    const changeAddress = wallet.Path1899.cashAddress;
+    const changeAddress = wallet.Path2137.cashAddress;
 
     const outputObj = generateTxOutput(
         isOneToMany,
@@ -1172,7 +1172,7 @@ it(`generateTxOutput() throws an error on invalid input params for a one to one 
     let txBuilder = utxolib.bitgo.createTransactionBuilderForNetwork(
         utxolib.networks.ecash,
     );
-    const changeAddress = wallet.Path1899.cashAddress;
+    const changeAddress = wallet.Path2137.cashAddress;
 
     let thrownError;
     try {
@@ -1219,7 +1219,7 @@ it(`generateTxOutput() throws an error on invalid input params for a one to many
     let txBuilder = utxolib.bitgo.createTransactionBuilderForNetwork(
         utxolib.networks.ecash,
     );
-    const changeAddress = wallet.Path1899.cashAddress;
+    const changeAddress = wallet.Path2137.cashAddress;
 
     let thrownError;
     try {

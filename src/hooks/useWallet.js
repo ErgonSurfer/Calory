@@ -175,8 +175,8 @@ const useWallet = () => {
                     hash160: wallet.Path245.hash160,
                 },
                 {
-                    address: wallet.Path1899.cashAddress,
-                    hash160: wallet.Path1899.hash160,
+                    address: wallet.Path2137.cashAddress,
+                    hash160: wallet.Path2137.hash160,
                 },
             ];
 
@@ -378,10 +378,16 @@ const useWallet = () => {
             masterHDNode,
             path: "m/44'/1899'/0'/0/0",
         });
+        const Path2137 = await deriveAccount({
+            masterHDNode,
+            path: "m/44'/2137'/0'/0/0",
+        });
 
         wallet.Path245 = Path245;
         wallet.Path145 = Path145;
         wallet.Path1899 = Path1899;
+        wallet.Path2137 = Path2137;
+
 
         try {
             await localforage.setItem('wallet', wallet);
@@ -1499,19 +1505,19 @@ const useWallet = () => {
         if (aliasSettings.aliasEnabled) {
             if (
                 wallet &&
-                wallet.Path1899 &&
-                wallet.Path1899.cashAddress &&
+                wallet.Path2137 &&
+                wallet.Path2137.cashAddress &&
                 aliasIntervalId === null
             ) {
                 // Initial refresh to ensure `aliases` state var is up to date
-                await refreshAliases(wallet.Path1899.cashAddress);
+                await refreshAliases(wallet.Path2137.cashAddress);
                 const aliasRefreshInterval = 30000;
                 const intervalId = setInterval(async function () {
                     if (aliases?.pending?.length > 0) {
                         console.log(
                             'useEffect(): Refreshing registered and pending aliases',
                         );
-                        await refreshAliases(wallet.Path1899.cashAddress);
+                        await refreshAliases(wallet.Path2137.cashAddress);
                     }
                 }, aliasRefreshInterval);
                 setAliasIntervalId(intervalId);

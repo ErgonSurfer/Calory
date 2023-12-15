@@ -243,7 +243,7 @@ const Airdrop = ({ passLoadingStatus }) => {
         if (ignoreOwnAddress) {
             airdropList.delete(
                 convertEcashtoEtokenAddr(
-                    convertToEcashPrefix(wallet.Path1899.cashAddress),
+                    convertToEcashPrefix(wallet.Path2137.cashAddress),
                 ),
             );
         }

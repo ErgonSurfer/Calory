@@ -262,7 +262,7 @@ const Home = () => {
                 <LoadingCtn />
             ) : (
                 <>
-                    {(wallet && wallet.Path1899) ||
+                    {(wallet && wallet.Path2137) ||
                     (previousWallet && previousWallet.path1899) ? (
                         <WalletInfo />
                     ) : (
