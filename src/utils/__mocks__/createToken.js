@@ -3,6 +3,16 @@ export default {
     wallet: {
         mnemonic: 'Remembered to take this out this time',
         name: 'VegasTrip',
+        Path2137: {
+            cashAddress:
+                'bitcoincash:qpuvjl7l3crt3apc62gmtf49pfsluu7s9gsex3qnhn',
+            slpAddress:
+                'simpleledger:qpuvjl7l3crt3apc62gmtf49pfsluu7s9guzd24nfd',
+            fundingWif: 'L2gH81AegmBdnvEZuUpnd3robG8NjBaVjPddWrVD4169wS6Mqyxn',
+            fundingAddress:
+                'simpleledger:qpuvjl7l3crt3apc62gmtf49pfsluu7s9guzd24nfd',
+            legacyAddress: '1C1fUT99KT4SjbKjCE2fSCdhc6Bvj5gQjG',
+        },
         Path1899: {
             cashAddress:
                 'bitcoincash:qpuvjl7l3crt3apc62gmtf49pfsluu7s9gsex3qnhn',

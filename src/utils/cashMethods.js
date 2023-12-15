@@ -175,7 +175,7 @@ export const getUtxoWif = (utxo, wallet) => {
     if (!wallet) {
         throw new Error('Invalid wallet parameter');
     }
-    const accounts = [wallet.Path245, wallet.Path145, wallet.Path2137];
+    const accounts = [wallet.Path245, wallet.Path145, wallet.Path1899, wallet.Path2137];
     const wif = accounts
         .filter(acc => acc.cashAddress === utxo.address)
         .pop().fundingWif;
@@ -185,7 +185,7 @@ export const getUtxoWif = (utxo, wallet) => {
 export const signUtxosByAddress = (inputUtxos, wallet, txBuilder) => {
     for (let i = 0; i < inputUtxos.length; i++) {
         const utxo = inputUtxos[i];
-        const accounts = [wallet.Path245, wallet.Path145, wallet.Path2137];
+        const accounts = [wallet.Path245, wallet.Path145, wallet.Path1899, wallet.Path2137];
 
         const wif = accounts
             .filter(acc => acc.cashAddress === utxo.address)
@@ -977,6 +977,7 @@ export const isValidStoredWallet = walletStateFromStorage => {
         'Path245' in walletStateFromStorage &&
         'Path145' in walletStateFromStorage &&
         'Path1899' in walletStateFromStorage &&
+        'Path2137' in walletStateFromStorage &&
         typeof walletStateFromStorage.state === 'object' &&
         'balances' in walletStateFromStorage.state &&
         !('hydratedUtxoDetails' in walletStateFromStorage.state) &&
@@ -1185,12 +1186,15 @@ export const convertToEncryptStruct = encryptionBuffer => {
 
 export const isLegacyMigrationRequired = wallet => {
     // If the wallet does not have Path1899,
-    // Or each Path1899, Path145, Path245 does not have a public key
+    // Or each Path2137, Path1899, Path145, Path245 does not have a public key
     // Then it requires migration
     if (
         !wallet.Path2137 ||
         !wallet.Path2137.publicKey ||
         !wallet.Path2137.hash160 ||
+        !wallet.Path1899 ||
+        !wallet.Path1899.publicKey ||
+        !wallet.Path1899.hash160 ||
         !wallet.Path145.publicKey ||
         !wallet.Path145.hash160 ||
         !wallet.Path245.publicKey ||
@@ -1210,6 +1214,7 @@ export const getHashArrayFromWallet = wallet => {
             ? [
                   wallet.Path245.hash160,
                   wallet.Path145.hash160,
+                  wallet.Path1899.hash160,
                   wallet.Path2137.hash160,
               ]
             : false;

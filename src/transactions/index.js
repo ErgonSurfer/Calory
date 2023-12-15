@@ -82,7 +82,7 @@ export const sendXec = async (chronik, wallet, targetOutputs, feeRate) => {
 
     signInputs(
         txBuilder,
-        [wallet.Path245, wallet.Path145, wallet.Path2137],
+        [wallet.Path245, wallet.Path145, wallet.Path1899, wallet.Path2137],
         inputs,
     );
 

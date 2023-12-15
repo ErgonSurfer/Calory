@@ -25,6 +25,13 @@ export const aliasRegisteringWallet = {
         cashAddress: 'ecash:qqswmjpcjyq6a5syh8qhklty5q826r5vlsh7a7uqtq',
         fundingWif: 'L3NFW2e1T92cF6YZydoEtpmYSm1hhmUzJ9fXgBAzF8ts4Eugno2D',
     },
+    Path2137: {
+        publicKey:
+            '036ea648569566fa0843b914f67e54ebcfa6921208acd6408d2881488809403ac6',
+        hash160: '20edc8389101aed204b9c17b7d64a00ead0e8cfc',
+        cashAddress: 'ecash:qqswmjpcjyq6a5syh8qhklty5q826r5vlsh7a7uqtq',
+        fundingWif: 'L3NFW2e1T92cF6YZydoEtpmYSm1hhmUzJ9fXgBAzF8ts4Eugno2D',
+    },
     state: {
         balances: {
             totalBalanceInSatoshis: '10000000',
@@ -158,6 +165,13 @@ export const aliasRegisteringWalletAfterTx = {
         fundingWif: 'Kwhw5NivkPBigRCsRFeab2W62yWHH3aNAK8PBAeK4cW13Sk3NM98',
     },
     Path1899: {
+        publicKey:
+            '036ea648569566fa0843b914f67e54ebcfa6921208acd6408d2881488809403ac6',
+        hash160: '20edc8389101aed204b9c17b7d64a00ead0e8cfc',
+        cashAddress: 'ecash:qqswmjpcjyq6a5syh8qhklty5q826r5vlsh7a7uqtq',
+        fundingWif: 'L3NFW2e1T92cF6YZydoEtpmYSm1hhmUzJ9fXgBAzF8ts4Eugno2D',
+    },
+    Path2137: {
         publicKey:
             '036ea648569566fa0843b914f67e54ebcfa6921208acd6408d2881488809403ac6',
         hash160: '20edc8389101aed204b9c17b7d64a00ead0e8cfc',
@@ -360,6 +374,13 @@ export const aliasRegisteringWalletAfterTwoTxs = {
         fundingWif: 'Kwhw5NivkPBigRCsRFeab2W62yWHH3aNAK8PBAeK4cW13Sk3NM98',
     },
     Path1899: {
+        publicKey:
+            '036ea648569566fa0843b914f67e54ebcfa6921208acd6408d2881488809403ac6',
+        hash160: '20edc8389101aed204b9c17b7d64a00ead0e8cfc',
+        cashAddress: 'ecash:qqswmjpcjyq6a5syh8qhklty5q826r5vlsh7a7uqtq',
+        fundingWif: 'L3NFW2e1T92cF6YZydoEtpmYSm1hhmUzJ9fXgBAzF8ts4Eugno2D',
+    },
+    Path2137: {
         publicKey:
             '036ea648569566fa0843b914f67e54ebcfa6921208acd6408d2881488809403ac6',
         hash160: '20edc8389101aed204b9c17b7d64a00ead0e8cfc',

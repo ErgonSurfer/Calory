@@ -10267,6 +10267,15 @@ export const mockParseTxWallet = {
         fundingAddress: 'string',
         legacyAddress: 'string',
     },
+    Path2137: {
+        publicKey: 'string',
+        hash160: '76458db0ed96fe9863fc1ccec9fa2cfab884b0f6',
+        cashAddress: 'string',
+        slpAddress: 'string',
+        fundingWif: 'string',
+        fundingAddress: 'string',
+        legacyAddress: 'string',
+    },
     state: {
         balances: {
             totalBalanceInSatoshis: '55421422',
@@ -10301,6 +10310,15 @@ export const mockParseAliasTxWallet = {
         legacyAddress: 'string',
     },
     Path1899: {
+        publicKey: 'string',
+        hash160: 'dc1147663948f0dcfb00cc407eda41b121713ad3',
+        cashAddress: 'string',
+        slpAddress: 'string',
+        fundingWif: 'string',
+        fundingAddress: 'string',
+        legacyAddress: 'string',
+    },
+    Path2137: {
         publicKey: 'string',
         hash160: 'dc1147663948f0dcfb00cc407eda41b121713ad3',
         cashAddress: 'string',
@@ -10345,6 +10363,16 @@ export const anotherMockParseTxWallet = {
         legacyAddress: 'string',
     },
     Path1899: {
+        publicKey:
+            '03771805b54969a9bea4e3eb14a82851c67592156ddb5e52d3d53677d14a40fba6',
+        hash160: '95e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d',
+        cashAddress: 'string',
+        slpAddress: 'string',
+        fundingWif: 'string',
+        fundingAddress: 'string',
+        legacyAddress: 'string',
+    },
+    Path2137: {
         publicKey:
             '03771805b54969a9bea4e3eb14a82851c67592156ddb5e52d3d53677d14a40fba6',
         hash160: '95e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d',
@@ -11769,6 +11797,17 @@ export const mockWalletWithPrivateKeys = {
             'simpleledger:qrhxmjw5p72a3cgx5cect3h63q5erw0gfceyv5zy7z',
         legacyAddress: '1NjhLtSNF32Nay82jV1b7yv6s7mxaeFeYP',
     },
+    Path2137: {
+        publicKey:
+            '038c4c26730d97cdeb18e69dff6c47cebb23e6f305c950923cd6110f35ab9006d0',
+        hash160: 'ee6dc9d40f95d8e106a63385c6fa882991b9e84e',
+        cashAddress: 'bitcoincash:qrhxmjw5p72a3cgx5cect3h63q5erw0gfc4l80hyqu',
+        slpAddress: 'simpleledger:qrhxmjw5p72a3cgx5cect3h63q5erw0gfceyv5zy7z',
+        fundingWif: 'Kwt39o7LZJ54nKyYU2Sz6dAZToXtFvYHtn6xKf2Nbi5E9kZfpHSH',
+        fundingAddress:
+            'simpleledger:qrhxmjw5p72a3cgx5cect3h63q5erw0gfceyv5zy7z',
+        legacyAddress: '1NjhLtSNF32Nay82jV1b7yv6s7mxaeFeYP',
+    },
     state: {
         balances: {
             totalBalanceInSatoshis: '49545',
@@ -12412,6 +12451,17 @@ export const mockSwapWallet = {
         legacyAddress: '17TWt79xyS72UBHoxgb6xfnCaHQXd4zHyh',
     },
     Path1899: {
+        publicKey:
+            '0358a2f0ed38317f63de8400515ec376517d4020ca121a5b71e56d19028d6fee27',
+        hash160: 'a7d744e1246a20f26238e0510fb82d8df84cc82d',
+        cashAddress: 'bitcoincash:qznaw38py34zpunz8rs9zrac9kxlsnxg95m2sf5czz',
+        slpAddress: 'simpleledger:qznaw38py34zpunz8rs9zrac9kxlsnxg95h3mjpcuu',
+        fundingWif: '',
+        fundingAddress:
+            'simpleledger:qznaw38py34zpunz8rs9zrac9kxlsnxg95h3mjpcuu',
+        legacyAddress: '1GJTjC9c5o3G7LJEGfgqzghGY6ecrwLAG9',
+    },
+    Path2137: {
         publicKey:
             '0358a2f0ed38317f63de8400515ec376517d4020ca121a5b71e56d19028d6fee27',
         hash160: 'a7d744e1246a20f26238e0510fb82d8df84cc82d',

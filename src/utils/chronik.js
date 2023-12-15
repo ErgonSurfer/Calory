@@ -867,6 +867,10 @@ export const getTxHistoryChronik = async (chronik, wallet, tokenInfoById) => {
             hash160: wallet.Path245.hash160,
         },
         {
+            address: wallet.Path1899.cashAddress,
+            hash160: wallet.Path1899.hash160,
+        },
+        {
             address: wallet.Path2137.cashAddress,
             hash160: wallet.Path2137.hash160,
         },

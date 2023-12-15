@@ -97,7 +97,7 @@ const Receive = () => {
             ) : (
                 <>
                     {(wallet && wallet.Path2137) ||
-                    (previousWallet && previousWallet.path1899) ? (
+                    (previousWallet && previousWallet.Path2137) ? (
                         <ReceiveWithWalletPresent
                             wallet={wallet}
                             cashtabSettings={cashtabSettings}

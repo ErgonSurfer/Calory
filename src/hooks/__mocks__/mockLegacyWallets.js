@@ -50,5 +50,12 @@ export default {
             publicKey:
                 '02a06bb380cf180d703f6f80796a13555aefff817d1f6f842f1e5c555b15f0fa70',
         },
+        Path2137: {
+            cashAddress: 'ecash:qzagy47mvh6qxkvcn3acjnz73rkhkc6y7ccxkrr6zd',
+            fundingWif: 'Kx4FiBMvKK1iXjFk5QTaAK6E4mDGPjmwDZ2HDKGUZpE4gCXMaPe9',
+            hash160: 'ba8257db65f40359989c7b894c5e88ed7b6344f6',
+            publicKey:
+                '02a06bb380cf180d703f6f80796a13555aefff817d1f6f842f1e5c555b15f0fa70',
+        },
     },
 };

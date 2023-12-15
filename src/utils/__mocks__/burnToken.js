@@ -25,6 +25,14 @@ export const burnTokenWallet = {
             'simpleledger:qz2708636snqhsxu8wnlka78h6fdp77ar5syue64fa',
         legacyAddress: '1Efd9z9GRVJK2r73nUpFmBnsKUmfXNm2y2',
     },
+    Path2137: {
+        cashAddress: 'bitcoincash:qz2708636snqhsxu8wnlka78h6fdp77ar5ulhz04hr',
+        slpAddress: 'simpleledger:qz2708636snqhsxu8wnlka78h6fdp77ar5syue64fa',
+        fundingWif: 'Nope',
+        fundingAddress:
+            'simpleledger:qz2708636snqhsxu8wnlka78h6fdp77ar5syue64fa',
+        legacyAddress: '1Efd9z9GRVJK2r73nUpFmBnsKUmfXNm2y2',
+    },
     state: {
         balances: {
             totalBalanceInSatoshis: '1503017804',

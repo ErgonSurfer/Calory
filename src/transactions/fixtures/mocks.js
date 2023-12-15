@@ -340,6 +340,17 @@ const multiAddressUtxos = [
         isCoinbase: false,
         value: '10000',
         network: 'XEC',
+        address: wallet.Path1899.cashAddress,
+    },
+    {
+        outpoint: {
+            txid: 'bc202cce79a686c8c846fad372677a07fa7821980aab95a1fb6bcf86f53f3450',
+            outIdx: 0,
+        },
+        blockHeight: -1,
+        isCoinbase: false,
+        value: '10000',
+        network: 'XEC',
         address: wallet.Path2137.cashAddress,
     },
 ];
@@ -349,7 +360,7 @@ utxosAtManyAddressesWallet.state.nonSlpUtxos = multiAddressUtxos;
 // Not expected to ever happen in Cashtab
 const walletWithInvalidPrivateKey = JSON.parse(JSON.stringify(wallet));
 // Take a portion of a valid fundingWif to keep base58 chars
-walletWithInvalidPrivateKey.Path1899.fundingWif =
+walletWithInvalidPrivateKey.Path2137.fundingWif =
     wallet.Path145.fundingWif.slice(0, 20);
 
 // Create a wallet with very large utxos

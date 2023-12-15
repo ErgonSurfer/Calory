@@ -36,7 +36,7 @@ test('Verify handleUpdateWallet() correctly initializes the active wallet', asyn
     function setWallet() {} // mock the setWallet state variable in useWallet
     await result.current.handleUpdateWallet(setWallet); // triggers loadWalletFromStorageOnStartup(setWallet)
 
-    // active wallet at this point only contains name, mnemonic, Path245, Path145 and Path1899 keys
+    // active wallet at this point only contains name, mnemonic, Path245, Path145, Path1899 and Path2137 keys
     const activeWallet = await result.current.wallet;
 
     // at the point of handleUpdateWallet() being called, the wallet has not been initialized with balances, utxos and token details

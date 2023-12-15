@@ -25,6 +25,14 @@ export const validStoredWallet = {
             'simpleledger:qz2708636snqhsxu8wnlka78h6fdp77ar5syue64fa',
         legacyAddress: '1Efd9z9GRVJK2r73nUpFmBnsKUmfXNm2y2',
     },
+    Path2137: {
+        cashAddress: 'bitcoincash:qz2708636snqhsxu8wnlka78h6fdp77ar5ulhz04hr',
+        slpAddress: 'simpleledger:qz2708636snqhsxu8wnlka78h6fdp77ar5syue64fa',
+        fundingWif: 'Nope',
+        fundingAddress:
+            'simpleledger:qz2708636snqhsxu8wnlka78h6fdp77ar5syue64fa',
+        legacyAddress: '1Efd9z9GRVJK2r73nUpFmBnsKUmfXNm2y2',
+    },
     state: {
         balances: {
             totalBalanceInSatoshis: '1503017804',
@@ -2196,6 +2204,14 @@ export const validStoredWalletAfter20221123Streamline = {
             'simpleledger:qz2708636snqhsxu8wnlka78h6fdp77ar5syue64fa',
         legacyAddress: '1Efd9z9GRVJK2r73nUpFmBnsKUmfXNm2y2',
     },
+    Path2137: {
+        cashAddress: 'bitcoincash:qz2708636snqhsxu8wnlka78h6fdp77ar5ulhz04hr',
+        slpAddress: 'simpleledger:qz2708636snqhsxu8wnlka78h6fdp77ar5syue64fa',
+        fundingWif: 'Nope',
+        fundingAddress:
+            'simpleledger:qz2708636snqhsxu8wnlka78h6fdp77ar5syue64fa',
+        legacyAddress: '1Efd9z9GRVJK2r73nUpFmBnsKUmfXNm2y2',
+    },
     state: {
         balances: {
             totalBalanceInSatoshis: '1503017804',
@@ -2881,6 +2897,14 @@ export const invalidStoredWallet = {
             'simpleledger:qz2708636snqhsxu8wnlka78h6fdp77ar5syue64fa',
         legacyAddress: '1Efd9z9GRVJK2r73nUpFmBnsKUmfXNm2y2',
     },
+    Path2137: {
+        cashAddress: 'bitcoincash:qz2708636snqhsxu8wnlka78h6fdp77ar5ulhz04hr',
+        slpAddress: 'simpleledger:qz2708636snqhsxu8wnlka78h6fdp77ar5syue64fa',
+        fundingWif: 'Remembered to take this out this time',
+        fundingAddress:
+            'simpleledger:qz2708636snqhsxu8wnlka78h6fdp77ar5syue64fa',
+        legacyAddress: '1Efd9z9GRVJK2r73nUpFmBnsKUmfXNm2y2',
+    },
     state: {
         balances: {
             totalBalanceInSatoshis: 1503017804,
@@ -3503,6 +3527,14 @@ export const invalidpreChronikStoredWallet = {
         legacyAddress: '1GVeC3gB6V3EStcQbJiry5BJn4fRdHjKyc',
     },
     Path1899: {
+        cashAddress: 'bitcoincash:qz2708636snqhsxu8wnlka78h6fdp77ar5ulhz04hr',
+        slpAddress: 'simpleledger:qz2708636snqhsxu8wnlka78h6fdp77ar5syue64fa',
+        fundingWif: 'Nope',
+        fundingAddress:
+            'simpleledger:qz2708636snqhsxu8wnlka78h6fdp77ar5syue64fa',
+        legacyAddress: '1Efd9z9GRVJK2r73nUpFmBnsKUmfXNm2y2',
+    },
+    Path2137: {
         cashAddress: 'bitcoincash:qz2708636snqhsxu8wnlka78h6fdp77ar5ulhz04hr',
         slpAddress: 'simpleledger:qz2708636snqhsxu8wnlka78h6fdp77ar5syue64fa',
         fundingWif: 'Nope',

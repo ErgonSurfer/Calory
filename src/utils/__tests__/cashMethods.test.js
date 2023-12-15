@@ -59,7 +59,9 @@ import {
 
 import {
     missingPath1899Wallet,
+    missingPath2137Wallet,
     missingPublicKeyInPath1899Wallet,
+    missingPublicKeyInPath2137Wallet,
     missingPublicKeyInPath145Wallet,
     missingPublicKeyInPath245Wallet,
     notLegacyWallet,
@@ -1470,6 +1472,14 @@ describe('Correctly executes cash utility functions', () => {
                 'ecash:qz2708636snqhsxu8wnlka78h6fdp77ar59jrf5035',
             ),
         ).toBe('ecash:qz2708636snqhsxu8wnlka78h6fdp77ar59jrf5035');
+    });
+    it(`Recognizes a wallet with missing Path2137 is a Legacy Wallet and requires migration`, () => {
+        expect(isLegacyMigrationRequired(missingPath2137Wallet)).toBe(true);
+    });
+    it(`Recognizes a wallet with missing PublicKey in Path2137 is a Legacy Wallet and requires migration`, () => {
+        expect(
+            isLegacyMigrationRequired(missingPublicKeyInPath2137Wallet),
+        ).toBe(true);
     });
     it(`Recognizes a wallet with missing Path1889 is a Legacy Wallet and requires migration`, () => {
         expect(isLegacyMigrationRequired(missingPath1899Wallet)).toBe(true);

@@ -37,6 +37,16 @@ export const walletWithBalancesMock = {
                 'simpleledger:qzagy47mvh6qxkvcn3acjnz73rkhkc6y7cdsfndq6y',
             legacyAddress: '1J1Aq5tAAYxZgSDRo8soKM2Rb41z3xrYpm',
         },
+        Path2137: {
+            cashAddress:
+                'bitcoincash:qzagy47mvh6qxkvcn3acjnz73rkhkc6y7cptzgcqy6',
+            slpAddress:
+                'simpleledger:qzagy47mvh6qxkvcn3acjnz73rkhkc6y7cdsfndq6y',
+            fundingWif: 'Kx4FiBMvKK1iXjFk5QTaAK6E4mDGPjmwDZ2HDKGUZpE4gCXMaPe9',
+            fundingAddress:
+                'simpleledger:qzagy47mvh6qxkvcn3acjnz73rkhkc6y7cdsfndq6y',
+            legacyAddress: '1J1Aq5tAAYxZgSDRo8soKM2Rb41z3xrYpm',
+        },
     },
     balances: {
         totalBalanceInSatoshis: '6047469',
@@ -82,6 +92,16 @@ export const walletWithoutBalancesMock = {
                 'simpleledger:qzagy47mvh6qxkvcn3acjnz73rkhkc6y7cdsfndq6y',
             legacyAddress: '1J1Aq5tAAYxZgSDRo8soKM2Rb41z3xrYpm',
         },
+        Path2137: {
+            cashAddress:
+                'bitcoincash:qzagy47mvh6qxkvcn3acjnz73rkhkc6y7cptzgcqy6',
+            slpAddress:
+                'simpleledger:qzagy47mvh6qxkvcn3acjnz73rkhkc6y7cdsfndq6y',
+            fundingWif: 'Kx4FiBMvKK1iXjFk5QTaAK6E4mDGPjmwDZ2HDKGUZpE4gCXMaPe9',
+            fundingAddress:
+                'simpleledger:qzagy47mvh6qxkvcn3acjnz73rkhkc6y7cdsfndq6y',
+            legacyAddress: '1J1Aq5tAAYxZgSDRo8soKM2Rb41z3xrYpm',
+        },
     },
     tokens: [],
     balances: {
@@ -118,6 +138,16 @@ export const walletWithBalancesAndTokens = {
             legacyAddress: '1511T3ynXKgCwXhFijCUWKuTfqbPxFV1AF',
         },
         Path1899: {
+            cashAddress:
+                'bitcoincash:qzagy47mvh6qxkvcn3acjnz73rkhkc6y7cptzgcqy6',
+            slpAddress:
+                'simpleledger:qzagy47mvh6qxkvcn3acjnz73rkhkc6y7cdsfndq6y',
+            fundingWif: 'Kx4FiBMvKK1iXjFk5QTaAK6E4mDGPjmwDZ2HDKGUZpE4gCXMaPe9',
+            fundingAddress:
+                'simpleledger:qzagy47mvh6qxkvcn3acjnz73rkhkc6y7cdsfndq6y',
+            legacyAddress: '1J1Aq5tAAYxZgSDRo8soKM2Rb41z3xrYpm',
+        },
+        Path2137: {
             cashAddress:
                 'bitcoincash:qzagy47mvh6qxkvcn3acjnz73rkhkc6y7cptzgcqy6',
             slpAddress:
@@ -195,6 +225,16 @@ export const walletWithBalancesAndTokensWithCorrectState = {
             legacyAddress: '1511T3ynXKgCwXhFijCUWKuTfqbPxFV1AF',
         },
         Path1899: {
+            cashAddress:
+                'bitcoincash:qzagy47mvh6qxkvcn3acjnz73rkhkc6y7cptzgcqy6',
+            slpAddress:
+                'simpleledger:qzagy47mvh6qxkvcn3acjnz73rkhkc6y7cdsfndq6y',
+            fundingWif: 'Kx4FiBMvKK1iXjFk5QTaAK6E4mDGPjmwDZ2HDKGUZpE4gCXMaPe9',
+            fundingAddress:
+                'simpleledger:qzagy47mvh6qxkvcn3acjnz73rkhkc6y7cdsfndq6y',
+            legacyAddress: '1J1Aq5tAAYxZgSDRo8soKM2Rb41z3xrYpm',
+        },
+        Path2137: {
             cashAddress:
                 'bitcoincash:qzagy47mvh6qxkvcn3acjnz73rkhkc6y7cptzgcqy6',
             slpAddress:

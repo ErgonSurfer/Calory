@@ -263,7 +263,7 @@ const Home = () => {
             ) : (
                 <>
                     {(wallet && wallet.Path2137) ||
-                    (previousWallet && previousWallet.path1899) ? (
+                    (previousWallet && previousWallet.Path2137) ? (
                         <WalletInfo />
                     ) : (
                         <OnBoarding />

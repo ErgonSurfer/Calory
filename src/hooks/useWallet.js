@@ -175,6 +175,10 @@ const useWallet = () => {
                     hash160: wallet.Path245.hash160,
                 },
                 {
+                    address: wallet.Path1899.cashAddress,
+                    hash160: wallet.Path1899.hash160,
+                },
+                {
                     address: wallet.Path2137.cashAddress,
                     hash160: wallet.Path2137.hash160,
                 },
@@ -314,7 +318,7 @@ const useWallet = () => {
             if (existingWallet) {
                 if (isLegacyMigrationRequired(existingWallet)) {
                     console.log(
-                        `Wallet does not have Path1899 or does not have public key`,
+                        `Wallet does not have Path2137 or does not have public key`,
                     );
                     existingWallet = await migrateLegacyWallet(existingWallet);
                 }
@@ -448,6 +452,10 @@ const useWallet = () => {
             masterHDNode,
             path: "m/44'/1899'/0'/0/0",
         });
+        const Path2137 = await deriveAccount({
+            masterHDNode,
+            path: "m/44'/2137'/0'/0/0",
+        });
 
         let name = Path1899.cashAddress.slice(6, 11);
         // Only set the name if it does not currently exist
@@ -461,6 +469,7 @@ const useWallet = () => {
             Path245,
             Path145,
             Path1899,
+            Path2137,
         };
     };
 
@@ -566,7 +575,7 @@ const useWallet = () => {
             }
         }
         // If wallet does not have Path1899, add it
-        // or each of the Path1899, Path145, Path245 does not have a public key, add them
+        // or each of the Path2137, Path1899, Path145, Path245 does not have a public key, add them
         // by calling migrateLagacyWallet()
         if (isLegacyMigrationRequired(walletToActivate)) {
             // Case 2, described above
