@@ -480,7 +480,6 @@ export const parseChronikTx = (tx, wallet, tokenInfoById) => {
     // Assign defaults
     let incoming = true;
     let xecAmount = new BigNumber(0);
-    let sendxecAmount = new BigNumber(0);
     let etokenAmount = new BigNumber(0);
     let isTokenBurn = false;
     let isEtokenTx = 'slpTxData' in tx && typeof tx.slpTxData !== 'undefined';
@@ -754,7 +753,7 @@ export const parseChronikTx = (tx, wallet, tokenInfoById) => {
         // Exception for eToken genesis transactions
         if (!incoming) {
             const thisOutputAmount = new BigNumber(thisOutput.value);
-            sendxecAmount = sendxecAmount.plus(thisOutputAmount);
+            xecAmount = xecAmount.plus(thisOutputAmount);
             if (isEtokenTx && !isGenesisTx && !isTokenBurn) {
                 try {
                     const thisEtokenAmount = new BigNumber(
