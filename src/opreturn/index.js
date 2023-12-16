@@ -27,7 +27,7 @@ export const getCashtabMsgTargetOutput = cashtabMsg => {
         throw new Error('getCashtabMsgTargetOutput requires string input');
     }
     if (cashtabMsg === '') {
-        throw new Error('Cashtab Msg cannot be an empty string');
+        throw new Error('Calory Msg cannot be an empty string');
     }
 
     let script = initializeScript();
@@ -41,7 +41,7 @@ export const getCashtabMsgTargetOutput = cashtabMsg => {
 
     if (cashtabMsgByteCount > opReturn.cashtabMsgByteLimit) {
         throw new Error(
-            `Error: Cashtab msg is ${cashtabMsgByteCount} bytes. Exceeds ${opReturn.cashtabMsgByteLimit} byte limit.`,
+            `Error: Calory msg is ${cashtabMsgByteCount} bytes. Exceeds ${opReturn.cashtabMsgByteLimit} byte limit.`,
         );
     }
 

@@ -627,7 +627,7 @@ export const parseChronikTx = (tx, wallet, tokenInfoById) => {
                     // soft error if an unexpected or invalid cashtab hex is encountered
                     opReturnMessage = '';
                     console.log(
-                        'useBCH.parsedTxData() error: invalid cashtab msg hex: ' +
+                        'useBCH.parsedTxData() error: invalid calory msg hex: ' +
                             parsedOpReturnArray[1],
                     );
                 }

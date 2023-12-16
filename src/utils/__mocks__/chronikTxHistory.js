@@ -10872,7 +10872,7 @@ export const txHistoryTokenInfoById = {
     '50d8292c6255cda7afc6c8566fed3cf42a2794e9619740fe8f4c95431271410e': {
         tokenTicker: 'TBC',
         tokenName: 'tabcash',
-        tokenDocumentUrl: 'https://cashtabapp.com/',
+        tokenDocumentUrl: 'https://calory.social/',
         tokenDocumentHash: '',
         decimals: 0,
         tokenId:
@@ -10889,8 +10889,8 @@ export const txHistoryTokenInfoById = {
     },
     '22f4ba40312ea3e90e1bfa88d2aa694c271d2e07361907b6eb5568873ffa62bf': {
         tokenTicker: 'CLA',
-        tokenName: 'Cashtab Local Alpha',
-        tokenDocumentUrl: 'boomertakes.com',
+        tokenName: 'Calory Local Alpha',
+        tokenDocumentUrl: 'https://calory.social/',
         tokenDocumentHash: '',
         decimals: 5,
         tokenId:
@@ -10899,7 +10899,7 @@ export const txHistoryTokenInfoById = {
     'da9460ce4b1c92b4f6ef4e4a6bc2d05539f49d02b17681389d9ce22b8dca50f0': {
         tokenTicker: 'SA',
         tokenName: 'Spinner Alpha',
-        tokenDocumentUrl: 'https://cashtabapp.com/',
+        tokenDocumentUrl: 'https://calory.social/',
         tokenDocumentHash: '',
         decimals: 0,
         tokenId:
@@ -10908,7 +10908,7 @@ export const txHistoryTokenInfoById = {
     '4db25a4b2f0b57415ce25fab6d9cb3ac2bbb444ff493dc16d0615a11ad06c875': {
         tokenTicker: 'LVV',
         tokenName: 'Lambda Variant Variants',
-        tokenDocumentUrl: 'https://cashtabapp.com/',
+        tokenDocumentUrl: 'https://calory.social/',
         tokenDocumentHash: '',
         decimals: 0,
         tokenId:
@@ -10916,8 +10916,8 @@ export const txHistoryTokenInfoById = {
     },
     '16b12bbacdbb8c8a799adbfd782bfff9843c1f9b0be148eaae02a1a7f74f95c4': {
         tokenTicker: 'CGEN',
-        tokenName: 'Cashtab Genesis',
-        tokenDocumentUrl: 'https://boomertakes.com/',
+        tokenName: 'Calory Genesis',
+        tokenDocumentUrl: 'https://calory.social/',
         tokenDocumentHash: '',
         decimals: 9,
         tokenId:
@@ -10934,8 +10934,8 @@ export const txHistoryTokenInfoById = {
     },
     'aa7202397a06097e8ff36855aa72c0ee032659747e5bd7cbcd3099fc3a62b6b6': {
         tokenTicker: 'CTL',
-        tokenName: 'Cashtab Token Launch Launch Token',
-        tokenDocumentUrl: 'https://cashtabapp.com/',
+        tokenName: 'Calory Token Launch Launch Token',
+        tokenDocumentUrl: 'https://calory.social/',
         tokenDocumentHash: '',
         decimals: 0,
         tokenId:
@@ -10943,8 +10943,8 @@ export const txHistoryTokenInfoById = {
     },
     '9e9738e9ac3ff202736bf7775f875ebae6f812650df577a947c20c52475e43da': {
         tokenTicker: 'CUTT',
-        tokenName: 'Cashtab Unit Test Token',
-        tokenDocumentUrl: 'https://cashtabapp.com/',
+        tokenName: 'Calory Unit Test Token',
+        tokenDocumentUrl: 'https://calory.social/',
         tokenDocumentHash: '',
         decimals: 2,
         tokenId:
@@ -10971,7 +10971,7 @@ export const txHistoryTokenInfoById = {
     '3515f4a9851ad44124e0ddf6149344deb27a97720fc7e5254a9d2c86da7415a9': {
         tokenTicker: '001',
         tokenName: '01',
-        tokenDocumentUrl: 'https://cashtab.com/',
+        tokenDocumentUrl: 'https://calory.social/',
         tokenDocumentHash: '',
         decimals: 0,
         tokenId:
@@ -10980,7 +10980,7 @@ export const txHistoryTokenInfoById = {
     '6fb6122742cac8fd1df2d68997fdfa4c077bc22d9ef4a336bfb63d24225f9060': {
         tokenTicker: '002',
         tokenName: '2',
-        tokenDocumentUrl: 'https://cashtab.com/',
+        tokenDocumentUrl: 'https://calory.social/',
         tokenDocumentHash: '',
         decimals: 0,
         tokenId:
@@ -10989,7 +10989,7 @@ export const txHistoryTokenInfoById = {
     '2936188a41f22a3e0a47d13296147fb3f9ddd2f939fe6382904d21a610e8e49c': {
         tokenTicker: '002',
         tokenName: '2',
-        tokenDocumentUrl: 'https://cashtab.com/',
+        tokenDocumentUrl: 'https://calory.social/',
         tokenDocumentHash: '',
         decimals: 0,
         tokenId:
@@ -10998,7 +10998,7 @@ export const txHistoryTokenInfoById = {
     'e859eeb52e7afca6217fb36784b3b6d3c7386a52f391dd0d00f2ec03a5e8e77b': {
         tokenTicker: 'test',
         tokenName: 'test',
-        tokenDocumentUrl: 'https://cashtab.com/',
+        tokenDocumentUrl: 'https://calory.social/',
         tokenDocumentHash: '',
         decimals: 1,
         tokenId:
@@ -11007,7 +11007,7 @@ export const txHistoryTokenInfoById = {
     'bdb3b4215ca0622e0c4c07655522c376eaa891838a82f0217fa453bb0595a37c': {
         tokenTicker: 'Service',
         tokenName: 'Evc token',
-        tokenDocumentUrl: 'https://cashtab.com',
+        tokenDocumentUrl: 'https://calory.social/',
         tokenDocumentHash: '',
         decimals: 0,
         tokenId:
@@ -11036,8 +11036,8 @@ export const txHistoryTokenInfoById = {
     },
     '6376cae692cf0302ecdd63234c14cbb2b21cec75ab538335f90254cfb3ed44cc': {
         tokenTicker: 'CLT',
-        tokenName: 'Cashtab Local Tests',
-        tokenDocumentUrl: 'https://cashtab.com/',
+        tokenName: 'Calory Local Tests',
+        tokenDocumentUrl: 'https://calory.social/',
         tokenDocumentHash: '',
         decimals: 0,
         tokenId:
@@ -11045,7 +11045,7 @@ export const txHistoryTokenInfoById = {
     },
     '666c4318d1f7fef5f2c698262492c519018d4e9130f95d05f6be9f0fb7149e96': {
         tokenTicker: 'CPG',
-        tokenName: 'Cashtab Prod Gamma',
+        tokenName: 'Calory Prod Gamma',
         tokenDocumentUrl: 'thecryptoguy.com',
         tokenDocumentHash: '',
         decimals: 0,

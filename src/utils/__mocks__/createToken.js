@@ -69,9 +69,9 @@ export default {
         },
     },
     configObj: {
-        name: 'Cashtab Unit Test Token',
+        name: 'Calory Unit Test Token',
         ticker: 'CUTT',
-        documentUrl: 'https://cashtabapp.com/',
+        documentUrl: 'https://calory.social/',
         decimals: '2',
         initialQty: '100',
         documentHash: '',

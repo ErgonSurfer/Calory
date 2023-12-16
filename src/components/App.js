@@ -421,7 +421,7 @@ const App = () => {
                 Modal.warn({
                     title: 'Notification permission refused',
                     content:
-                        'Please enable notifications from Cashtab.com to help prevent your browser from deleting Cashtab wallet info.',
+                        'Please enable notifications from Calory to help prevent your browser from deleting Calory wallet info.',
                 });
             } else {
                 console.log(`Notification permission granted`);
@@ -515,7 +515,7 @@ const App = () => {
             const extensionInstalled = await getExtensionInstallationStatus();
             // TODO if false and other conditions are met, show popup advertising browser extension
             console.log(
-                `Cashtab browser extension: ${
+                `Calory browser extension: ${
                     extensionInstalled ? 'Installed' : 'Not installed'
                 }`,
             );
@@ -539,7 +539,7 @@ const App = () => {
                     <WalletBody>
                         <WalletCtn>
                             <HeaderCtn>
-                                <CashtabLogo src={Cashtab} alt="cashtab" />
+                                <CashtabLogo src={Cashtab} alt="Calory" />
                                 {selectedKey === 'airdrop' && (
                                     <NavHeader>
                                         Airdrop

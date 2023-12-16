@@ -91,7 +91,7 @@ const useWallet = () => {
         const chronikUrlCount = chronikConfig.urls.length;
 
         console.log(
-            `Cashtab has ${
+            `Calory has ${
                 chronikUrlCount - 1
             } alternative chronik instances available`,
         );
@@ -580,7 +580,7 @@ const useWallet = () => {
         if (isLegacyMigrationRequired(walletToActivate)) {
             // Case 2, described above
             console.log(
-                `Case 2: Wallet to activate is not in the most up to date Cashtab format`,
+                `Case 2: Wallet to activate is not in the most up to date Calory format`,
             );
             console.log(`walletToActivate`, walletToActivate);
             walletToActivate = await migrateLegacyWallet(walletToActivate);

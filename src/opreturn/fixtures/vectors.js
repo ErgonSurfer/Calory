@@ -10,7 +10,7 @@ export const opReturnVectors = {
         expectedReturns: [
             {
                 description: 'Alphanumeric string',
-                cashtabMsg: 'This is a Cashtab Msg',
+                cashtabMsg: 'This is a Calory Msg',
                 outputScriptHex:
                     '6a0400746162155468697320697320612043617368746162204d7367',
             },
@@ -21,7 +21,7 @@ export const opReturnVectors = {
                     '6a04007461622bf09f998ff09f93acf09faba1f09f9180f09f95b5efb88ff09f9191f09f8e83f09faa96f09f908bf09f8eaf',
             },
             {
-                description: 'String of max length for Cashtab Msg',
+                description: 'String of max length for Calory Msg',
                 cashtabMsg:
                     '00000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000112345',
                 outputScriptHex:
@@ -31,10 +31,10 @@ export const opReturnVectors = {
         expectedErrors: [
             {
                 description:
-                    'String exceeding max length for Cashtab Msg by 1 byte',
+                    'String exceeding max length for Calory Msg by 1 byte',
                 cashtabMsg:
                     '000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001000000000100000000010000000001123456',
-                errorMsg: `Cashtab msg is 216 bytes. Exceeds ${opReturn.cashtabMsgByteLimit} byte limit.`,
+                errorMsg: `Calory msg is 216 bytes. Exceeds ${opReturn.cashtabMsgByteLimit} byte limit.`,
             },
             {
                 description: 'non-string input',
@@ -44,7 +44,7 @@ export const opReturnVectors = {
             {
                 description: 'Empty string',
                 cashtabMsg: '',
-                errorMsg: 'Cashtab Msg cannot be an empty string',
+                errorMsg: 'Calory Msg cannot be an empty string',
             },
         ],
     },

@@ -58,7 +58,7 @@ export const cGenStatsValid = {
     versionType: 1,
     documentUri: 'https://boomertakes.com/',
     symbol: 'CGEN',
-    name: 'Cashtab Genesis',
+    name: 'Calory Genesis',
     containsBaton: false,
     id: '16b12bbacdbb8c8a799adbfd782bfff9843c1f9b0be148eaae02a1a7f74f95c4',
     documentHash: null,

@@ -30,7 +30,7 @@ const ServiceWorkerWrapper = () => {
             cancelButtonProps={{ style: { display: 'none' } }}
         >
             <p>
-                A new version of Cashtab is available. Refresh or click OK to
+                A new version of Calory is available. Refresh or click OK to
                 load.
             </p>
         </Modal>

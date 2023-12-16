@@ -496,7 +496,7 @@ const Alias = ({ passLoadingStatus }) => {
                 )}
                 {!useThisAddressChecked &&
                     !aliasAddressValidationError &&
-                    ` Please also note Cashtab will only track alias registrations for ${wallet.name}: ${wallet.Path2137?.cashAddress}.`}
+                    ` Please also note Calory will only track alias registrations for ${wallet.name}: ${wallet.Path2137?.cashAddress}.`}
             </Modal>
             <WalletInfoCtn>
                 <WalletLabel
