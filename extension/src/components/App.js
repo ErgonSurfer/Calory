@@ -704,16 +704,7 @@ const App = () => {
                                 <NavWrapper onClick={handleNavMenuClick}>
                                     <NavIcon clicked={navMenuClicked} />
                                     <NavMenu open={navMenuClicked}>
-                                        <NavItem
-                                            active={selectedKey === 'airdrop'}
-                                            onClick={() =>
-                                                history.push('/airdrop')
-                                            }
-                                        >
-                                            {' '}
-                                            <p>Airdrop</p>
-                                            <AirdropIcon />
-                                        </NavItem>
+
                                         <NavItem
                                             active={
                                                 selectedKey === 'signverifymsg'

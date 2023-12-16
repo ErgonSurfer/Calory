@@ -99,16 +99,27 @@ const OnBoarding = () => {
         <WelcomeCtn>
             <h2>Welcome to Calory{' '}!</h2>
             <WelcomeText>
+                <br /><br />
+
                 Calory is an{' '}
                 <WelcomeLink
-                    href="https://github.com/ErgonSurfer/bitcoin-abc/tree/ergon/calory"
+                    href="https://github.com/ErgonSurfer/Calory"
                     target="_blank"
                     rel="noreferrer"
                 >
                     open source,
                 </WelcomeLink>{' '}
-                non-custodial web wallet for {appConfig.name}.
+                non-custodial web wallet for {appConfig.name}. 
+
+                <br /><br />
+
+                <strong>Important Security Notice: </strong>Your seed phrase, which is crucial for access to your funds, is accessible in the Settings. 
+
+                <br /><br />
+
+                <strong>Please ensure to store your seed phrase in a secure and private location.</strong> It's the key to your wallet, and losing it can result in the loss of your assets. Remember, never share your seed phrase with anyone.
             </WelcomeText>
+
 
             <PrimaryButton onClick={() => showBackupConfirmModal()}>
                 <PlusSquareOutlined /> New Wallet
